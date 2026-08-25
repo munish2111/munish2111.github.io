@@ -19,25 +19,87 @@
 
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 80px;
 }
 
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     background: var(--bg);
     color: var(--text);
-    line-height: 1.6;
+    line-height: 1.7;
 }
 
 .container {
-    max-width: 900px;
+    max-width: 960px;
     margin: 0 auto;
     padding: 0 24px;
 }
 
+/* Navbar */
+.navbar {
+    position: sticky;
+    top: 0;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    z-index: 1000;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+}
+
+.nav-logo {
+    font-weight: 700;
+    color: var(--primary-dark);
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 24px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text);
+    font-weight: 500;
+    font-size: 0.92rem;
+    transition: color 0.2s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: var(--primary);
+}
+
+.nav-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 6px;
+}
+
+.nav-toggle span {
+    width: 24px;
+    height: 2px;
+    background: var(--text);
+    transition: 0.3s;
+}
+
+/* Hero */
 .hero {
     background: linear-gradient(135deg, #0a66c2 0%, #004182 100%);
     color: #fff;
-    padding: 80px 0 60px;
+    padding: 90px 0 70px;
     text-align: center;
 }
 
@@ -46,16 +108,16 @@ body {
 }
 
 .name {
-    font-size: 2.8rem;
+    font-size: 2.9rem;
     font-weight: 700;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
     letter-spacing: -0.5px;
 }
 
 .title {
-    font-size: 1.25rem;
-    font-weight: 300;
-    margin-bottom: 20px;
+    font-size: 1.15rem;
+    font-weight: 400;
+    margin-bottom: 22px;
     opacity: 0.95;
 }
 
@@ -84,6 +146,13 @@ body {
     opacity: 0.6;
 }
 
+.hero-actions {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
 .btn-linkedin {
     display: inline-block;
     background: #fff;
@@ -93,6 +162,7 @@ body {
     text-decoration: none;
     font-weight: 600;
     transition: transform 0.2s, box-shadow 0.2s;
+    border: 2px solid #fff;
 }
 
 .btn-linkedin:hover {
@@ -100,34 +170,77 @@ body {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
+.btn-outline {
+    display: inline-block;
+    color: #fff;
+    padding: 12px 28px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    transition: background 0.2s, border-color 0.2s, transform 0.2s;
+}
+
+.btn-outline:hover {
+    background: rgba(255, 255, 255, 0.12);
+    border-color: #fff;
+    transform: translateY(-2px);
+}
+
+/* Sections */
 .section {
     background: var(--surface);
     margin: 32px 0;
-    padding: 40px;
+    padding: 44px;
     border-radius: var(--radius);
     box-shadow: var(--shadow);
-    animation: fadeInUp 0.8s ease-out;
-    animation-fill-mode: both;
 }
 
-.section:nth-child(2) { animation-delay: 0.1s; }
-.section:nth-child(3) { animation-delay: 0.2s; }
-.section:nth-child(4) { animation-delay: 0.3s; }
-
 .section h2 {
-    font-size: 1.6rem;
-    margin-bottom: 20px;
+    font-size: 1.65rem;
+    margin-bottom: 24px;
     color: var(--primary-dark);
     border-bottom: 3px solid var(--accent);
     display: inline-block;
     padding-bottom: 6px;
 }
 
+/* Cover Letter */
+.letter-body {
+    color: #343a40;
+}
+
+.letter-intro {
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+
+.letter-body p {
+    margin-bottom: 16px;
+}
+
+.letter-signoff {
+    margin-top: 28px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+}
+
+.letter-signoff a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+.letter-signoff a:hover {
+    text-decoration: underline;
+}
+
+/* Summary */
 .summary p {
     margin-bottom: 16px;
     color: #343a40;
 }
 
+/* Skills */
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -139,11 +252,16 @@ body {
     padding: 22px;
     border-radius: var(--radius);
     border-left: 4px solid var(--primary);
-    transition: transform 0.2s;
+    transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .skill-card:hover {
     transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+.skill-card.wide {
+    grid-column: 1 / -1;
 }
 
 .skill-card h3 {
@@ -157,10 +275,11 @@ body {
     color: var(--text-light);
 }
 
+/* Experience */
 .timeline {
     display: flex;
     flex-direction: column;
-    gap: 32px;
+    gap: 34px;
 }
 
 .job {
@@ -210,7 +329,7 @@ body {
 }
 
 .job ul li {
-    margin-bottom: 6px;
+    margin-bottom: 7px;
 }
 
 .projects {
@@ -218,6 +337,7 @@ body {
     color: var(--text-light);
 }
 
+/* Education */
 .edu-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -259,9 +379,38 @@ body {
     font-weight: 500;
 }
 
+/* Contact */
+.contact p {
+    margin-bottom: 24px;
+    color: #343a40;
+    max-width: 700px;
+}
+
+.contact-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+.contact-actions .btn-linkedin {
+    background: var(--primary);
+    color: #fff;
+    border-color: var(--primary);
+}
+
+.contact-actions .btn-outline {
+    color: var(--primary);
+    border-color: var(--primary);
+}
+
+.contact-actions .btn-outline:hover {
+    background: rgba(10, 102, 194, 0.08);
+}
+
+/* Footer */
 .footer {
     text-align: center;
-    padding: 30px 0;
+    padding: 34px 0;
     color: var(--text-light);
     font-size: 0.9rem;
 }
@@ -277,7 +426,29 @@ body {
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
+    .nav-links {
+        position: fixed;
+        top: 64px;
+        right: -100%;
+        width: 220px;
+        height: calc(100vh - 64px);
+        background: #fff;
+        flex-direction: column;
+        padding: 24px;
+        gap: 18px;
+        box-shadow: -4px 0 20px rgba(0, 0, 0, 0.08);
+        transition: right 0.3s ease;
+    }
+
+    .nav-links.active {
+        right: 0;
+    }
+
+    .nav-toggle {
+        display: flex;
+    }
+
     .name {
         font-size: 2rem;
     }
@@ -302,5 +473,11 @@ body {
 
     .separator {
         display: none;
+    }
+
+    .hero-actions,
+    .contact-actions {
+        flex-direction: column;
+        align-items: stretch;
     }
 }
