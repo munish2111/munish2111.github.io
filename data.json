@@ -91,7 +91,7 @@
   "coverLetter": {
     "sectionTag": "Introduction",
     "sectionTitle": "Cover Letter",
-    "intro": "Dear Hiring Manager,",
+    "intro": "Dear Hiring Team,",
     "paragraphs": [
       "I am writing to express my interest in a <strong>Senior Application Developer, Technical Lead, or Mobile Application Developer</strong> position within your organization.",
       "With over <strong>10 years of experience</strong> in designing and delivering scalable, high-performance mobile and cross-platform applications, I specialize in <strong>React Native, .NET MAUI, Xamarin, C#, Kotlin,</strong> and <strong>backend API development</strong>. I have successfully led enterprise application development from architecture and implementation to release management and production support while mentoring teams and driving engineering excellence.",
