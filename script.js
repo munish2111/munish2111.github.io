@@ -7,7 +7,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     async function loadData() {
         try {
-            const response = await fetch('data.json', { cache: 'no-store' });
+            // Cache-busting query ensures the latest data.json is fetched after edits.
+            const cacheBuster = `?v=${Date.now()}`;
+            const response = await fetch(`data.json${cacheBuster}`, { cache: 'no-store' });
             if (!response.ok) {
                 throw new Error(`Failed to load data.json: ${response.status} ${response.statusText}`);
             }
@@ -15,9 +17,21 @@ document.addEventListener('DOMContentLoaded', () => {
             renderAll(appData);
             initAnalytics(appData.analytics || {});
         } catch (error) {
-            console.warn('Could not load dynamic data. Falling back to static defaults.', error);
+            console.warn('Could not load dynamic data.', error);
+            showDataError('Unable to load profile data. Please refresh the page.');
             initAnalytics({});
         }
+    }
+
+    function showDataError(message) {
+        const hero = document.querySelector('.hero-content');
+        if (hero) {
+            hero.innerHTML = `<p class="hero-greeting" style="color:#fff">Error</p>
+                <h1 class="name" style="color:#fff">${escapeHtml(message)}</h1>`;
+        }
+        document.querySelectorAll('.section').forEach(section => {
+            section.style.display = 'none';
+        });
     }
 
     function renderAll(data) {
