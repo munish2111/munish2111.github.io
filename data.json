@@ -1,0 +1,343 @@
+{
+  "site": {
+    "title": "Sayed Munish Ahmad | Technology Lead| Mobile & AI",
+    "description": "Sayed Munish Ahmad - - Technology Lead specializing in React Native, .NET MAUI, Generative AI, Azure AI Foundry and Agentic AI.",
+    "language": "en",
+    "theme": "light"
+  },
+  "analytics": {
+    "googleAnalyticsId": "G-3H9Q9E576D",
+    "counterApiNamespace": "munish-profile",
+    "counterApiKey": "visits",
+    "badgeTitle": "Approximate page views since analytics was enabled"
+  },
+  "ui": {
+    "themeToggle": {
+      "ariaLabel": "Toggle dark mode",
+      "lightLabel": "Light",
+      "darkLabel": "Dark"
+    },
+    "navToggle": {
+      "ariaLabel": "Toggle navigation"
+    },
+    "backToTop": {
+      "text": "Top",
+      "ariaLabel": "Back to top"
+    }
+  },
+  "navigation": {
+    "logo": {
+      "mark": "M",
+      "text": "Sayed Munish Ahmad"
+    },
+    "links": [
+      { "label": "Cover Letter", "href": "#cover-letter" },
+      { "label": "Summary", "href": "#summary" },
+      { "label": "Skills", "href": "#skills" },
+      { "label": "Experience", "href": "#experience" },
+      { "label": "Projects", "href": "#projects" },
+      { "label": "Education", "href": "#education" },
+      { "label": "Contact", "href": "#contact" }
+    ]
+  },
+  "hero": {
+    "greeting": "Hello, I'm",
+    "name": "Sayed Munish Ahmad",
+    "typewriterPhrases": [
+      "Technology Lead",
+      "React Native Specialist",
+      ".NET MAUI Developer",
+      "Generative AI & Agentic AI",
+      "Azure AI Foundry"
+    ],
+    "contact": [
+      {
+        "type": "location",
+        "label": "Loc",
+        "text": "Bhubaneswar, India",
+        "href": "https://maps.google.com/?q=Bhubaneswar,India"
+      },
+      {
+        "type": "phone",
+        "label": "Tel",
+        "text": "+91 9777145839",
+        "href": "tel:+919777145839"
+      },
+      {
+        "type": "email",
+        "label": "@",
+        "text": "munishahmad@gmail.com",
+        "href": "mailto:munishahmad@gmail.com"
+      }
+    ],
+    "actions": [
+      {
+        "type": "primary",
+        "label": "View LinkedIn",
+        "href": "https://linkedin.com/in/munish-ahmad-24377528"
+      },
+      {
+        "type": "secondary",
+        "label": "Get In Touch",
+        "href": "#contact"
+      },
+      {
+        "type": "ghost",
+        "label": "Print Resume",
+        "action": "print"
+      }
+    ]
+  },
+  "coverLetter": {
+    "sectionTag": "Introduction",
+    "sectionTitle": "Cover Letter",
+    "intro": "Dear Hiring Manager,",
+    "paragraphs": [
+      "I am writing to express my interest in a <strong>Senior Application Developer, Technical Lead, or Mobile Application Developer</strong> position within your organization.",
+      "With over <strong>10 years of experience</strong> in designing and delivering scalable, high-performance mobile and cross-platform applications, I specialize in <strong>React Native, .NET MAUI, Xamarin, C#, Kotlin,</strong> and <strong>backend API development</strong>. I have successfully led enterprise application development from architecture and implementation to release management and production support while mentoring teams and driving engineering excellence.",
+      "Currently, I work as a <strong>Technology Lead at Infosys</strong>, where I lead end-to-end mobile application development, build enterprise-grade solutions, and develop AI-enabled proof-of-concepts to improve engineering productivity and business outcomes. My expertise includes <strong>application architecture, performance optimization, REST API integration, Microsoft Azure,</strong> and monitoring platforms such as <strong>AppDynamics, Sentry, and Grafana</strong>.",
+      "In addition to mobile and cloud technologies, I am experienced in <strong>Generative AI, Agentic AI, Azure AI Foundry, Prompt Engineering,</strong> and <strong>AI Agent development</strong>, with hands-on experience integrating enterprise AI solutions and applying Agile AI development practices using the <strong>BMAD Method</strong>. I am passionate about building intelligent, AI-powered applications that combine modern software engineering with practical AI capabilities.",
+      "I continuously invest in expanding my expertise through professional learning and certifications. My credentials include <strong>Claude 101, Claude Code 101, Microsoft Certified: GitHub Copilot,</strong> and <strong>Microsoft Certified: Agentic AI Business Solutions Architect (In Progress)</strong>.",
+      "I am confident that my combination of <strong>technical leadership, mobile application expertise, cloud technologies,</strong> and <strong>AI experience</strong> enables me to make an immediate contribution to your engineering team. I would welcome the opportunity to discuss how my background aligns with your organization's goals.",
+      "Thank you for your time and consideration. I look forward to hearing from you."
+    ],
+    "signoff": {
+      "label": "Kind regards,",
+      "name": "Sayed Munish Ahmad",
+      "title": "Technology Lead | React Native | .NET MAUI | Generative AI | Agentic AI | Azure AI Foundry",
+      "phone": "+91 9777145839",
+      "email": "munishahmad@gmail.com",
+      "linkedin": {
+        "text": "linkedin.com/in/munish-ahmad-24377528",
+        "href": "https://linkedin.com/in/munish-ahmad-24377528"
+      }
+    }
+  },
+  "summary": {
+    "sectionTag": "At a Glance",
+    "sectionTitle": "Professional Summary",
+    "stats": [
+      { "value": "10+", "label": "Years Experience" },
+      { "value": "4", "label": "Organizations" },
+      { "value": "10+", "label": "Enterprise Projects" },
+      { "value": "4+", "label": "Certifications" }
+    ],
+    "paragraphs": [
+      "Technology Lead over <strong>10 years of experience</strong> building scalable, high-performance mobile and cross-platform applications. Expertise in <strong>React Native, Expo, .NET MAUI, Xamarin, Kotlin, C#,</strong> and <strong>TypeScript</strong>, with a strong focus on architecture, performance, and technical leadership.",
+      "Experienced in <strong>Generative AI, Agentic AI, Azure AI Foundry, Prompt Engineering,</strong> and <strong>AI Agent development</strong>, with hands-on enterprise AI integration and Agile AI development (BMAD Method). Proven ability to lead end-to-end delivery, mentor engineering teams, optimize application performance, and integrate REST APIs, cloud services, and monitoring tools.",
+      "Passionate about building intelligent, AI-powered solutions through modern software engineering."
+    ]
+  },
+  "skills": {
+    "sectionTag": "Expertise",
+    "sectionTitle": "Core Skills",
+    "categories": [
+      {
+        "icon": "Mobile",
+        "title": "Mobile & Cross-Platform",
+        "tags": ["React Native", ".NET MAUI", "Xamarin", "Expo", "Cross-platform Development"]
+      },
+      {
+        "icon": "Native",
+        "title": "Native Mobile",
+        "tags": ["Android", "Android SDK", "Android Studio", "iOS", "iOS Development", "Xcode"]
+      },
+      {
+        "icon": "Code",
+        "title": "Languages",
+        "tags": ["C#", "Kotlin", "JavaScript", "TypeScript", "Java", "C", "HTML", "CSS", "XAML", "JSON"]
+      },
+      {
+        "icon": "Stack",
+        "title": "Frameworks, Tools & IDEs",
+        "tags": ["React.js", "MVVM", "Visual Studio", "VS Code", "Android Studio", "Xcode", "GitHub", "GitHub Copilot"]
+      },
+      {
+        "icon": "Cloud",
+        "title": "Cloud & AI",
+        "tags": ["Microsoft Azure", "Cloud Foundry", "Generative AI", "Agentic AI", "Azure AI Foundry", "Prompt Engineering", "AI Agent Development"]
+      },
+      {
+        "icon": "Web",
+        "title": "Web & CMS",
+        "tags": ["Web Development", "Responsive Web Design", "CMS", "WordPress"]
+      },
+      {
+        "icon": "Monitor",
+        "title": "Monitoring & Performance",
+        "tags": ["AppDynamics", "Sentry", "Grafana", "Application Monitoring", "Performance Optimization"]
+      },
+      {
+        "icon": "Process",
+        "title": "Processes & Architecture",
+        "tags": ["System Architecture", "Mobile UX", "REST API Integration", "Quality Processes", "QA Automation", "Product Development", "Operational Efficiency"]
+      },
+      {
+        "icon": "Lead",
+        "title": "Leadership",
+        "tags": ["Team Management", "Technical Leadership", "Release Management", "Production Support", "Agile Delivery"]
+      }
+    ]
+  },
+  "experience": {
+    "sectionTag": "Career",
+    "sectionTitle": "Professional Experience",
+    "jobs": [
+      {
+        "title": "Technology Lead",
+        "company": "Infosys",
+        "duration": "Aug 2022 – Present",
+        "responsibilities": [
+          "Lead end-to-end mobile application development, including coding, maintenance, release support, and defect management.",
+          "Build enterprise-grade solutions and develop AI-enabled proof-of-concepts to improve engineering productivity and business outcomes.",
+          "Collaborate with QA teams to ensure quality, streamline processes, and drive engineering excellence.",
+          "Utilize GitHub Copilot effectively to enhance productivity and efficiency.",
+          "Own application architecture, performance optimization, REST API integration, and production monitoring."
+        ],
+        "keyProjectsLabel": "Key Projects:",
+        "keyProjects": ["PepsiCo SH+ App", "TSC TMA"]
+      },
+      {
+        "title": "Lead Developer / Senior Developer",
+        "company": "LocalWire",
+        "duration": "2019 – 2022",
+        "responsibilities": [
+          "Led development of scalable mobile apps improving user experience.",
+          "Managed team delivery ensuring timely releases."
+        ],
+        "keyProjectsLabel": "Key Project:",
+        "keyProjects": ["Odisha Local Hyperlocal News App"]
+      },
+      {
+        "title": "Xamarin Developer",
+        "company": "Ellmech IT",
+        "duration": "2017 – 2019",
+        "responsibilities": [
+          "Delivered enterprise mobility solutions.",
+          "Improved application stability and performance."
+        ],
+        "keyProjectsLabel": "Key Projects:",
+        "keyProjects": ["VLMS Logistics (Vedanta)", "LimsCoal", "Meal Booking App"]
+      },
+      {
+        "title": "Web Developer",
+        "company": "HyperSolution",
+        "duration": "2014 – 2015",
+        "responsibilities": [
+          "Developed responsive websites."
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "sectionTag": "Portfolio",
+    "sectionTitle": "Key Projects",
+    "items": [
+      {
+        "company": "Infosys",
+        "title": "PepsiCo SH+ App",
+        "description": "Enterprise mobile application for PepsiCo, enabling sales and distribution workflows with performance monitoring and scalable architecture.",
+        "tags": ["React Native", "Enterprise", "Mobile"]
+      },
+      {
+        "company": "Infosys",
+        "title": "TSC TMA",
+        "description": "Technical mobility application focused on enterprise operations, release management, and production support.",
+        "tags": ["Cross-Platform", "Release Mgmt"]
+      },
+      {
+        "company": "LocalWire",
+        "title": "Odisha Local Hyperlocal News App",
+        "description": "Scalable hyperlocal news platform delivering regional content and improving user engagement across mobile devices.",
+        "tags": ["News Platform", "Android", "iOS"]
+      },
+      {
+        "company": "Ellmech IT",
+        "title": "VLMS Logistics (Vedanta)",
+        "description": "Vehicle and logistics management solution for Vedanta, streamlining enterprise mobility and field operations.",
+        "tags": ["Xamarin", "Logistics", "Enterprise"]
+      },
+      {
+        "company": "Ellmech IT",
+        "title": "LimsCoal",
+        "description": "Laboratory information management system for coal quality tracking and reporting in industrial environments.",
+        "tags": ["LIMS", "Industrial"]
+      },
+      {
+        "company": "Ellmech IT",
+        "title": "Meal Booking App",
+        "description": "Enterprise meal booking and cafeteria management application improving daily operations for large workforces.",
+        "tags": ["Enterprise", "Booking"]
+      }
+    ]
+  },
+  "education": {
+    "sectionTag": "Background",
+    "sectionTitle": "Education & Certifications",
+    "degrees": [
+      {
+        "title": "Master in Computer Application",
+        "institution": "Regional College, BPUT"
+      },
+      {
+        "title": "B.Sc",
+        "institution": "Utkal University"
+      }
+    ],
+    "certificationsLabel": "Certifications",
+    "certifications": [
+      "Claude 101",
+      "Claude Code 101",
+      "Microsoft Certified: GitHub Copilot",
+      "Microsoft Certified: Agentic AI Business Solutions Architect"
+    ]
+  },
+  "contact": {
+    "sectionTag": "Reach Out",
+    "sectionTitle": "Let's Connect",
+    "intro": "I am open to Senior Application Developer, Technical Lead, and Mobile Application Developer opportunities. Let's discuss how my experience can contribute to your team.",
+    "methods": [
+      {
+        "label": "Email",
+        "value": "munishahmad@gmail.com",
+        "href": "mailto:munishahmad@gmail.com"
+      },
+      {
+        "label": "Phone",
+        "value": "+91 9777145839",
+        "href": "tel:+919777145839"
+      },
+      {
+        "label": "LinkedIn",
+        "value": "linkedin.com/in/munish-ahmad-24377528",
+        "href": "https://linkedin.com/in/munish-ahmad-24377528"
+      },
+      {
+        "label": "Location",
+        "value": "Bhubaneswar, India"
+      }
+    ],
+    "form": {
+      "nameLabel": "Name",
+      "namePlaceholder": "Your name",
+      "emailLabel": "Email",
+      "emailPlaceholder": "your@email.com",
+      "messageLabel": "Message",
+      "messagePlaceholder": "Tell me about the opportunity...",
+      "submitLabel": "Send Message",
+      "note": "This form is for demonstration. It will open your email client.",
+      "sendingNote": "Opening your email client...",
+      "recipient": "munishahmad@gmail.com",
+      "subject": "Opportunity from {{name}}"
+    }
+  },
+  "footer": {
+    "copyright": "Sayed Munish Ahmad. All rights reserved.",
+    "links": [
+      { "label": "LinkedIn", "href": "https://linkedin.com/in/munish-ahmad-24377528" },
+      { "label": "Email", "href": "mailto:munishahmad@gmail.com" },
+      { "label": "Phone", "href": "tel:+919777145839" }
+    ],
+    "analyticsLabel": "Page Views:"
+  }
+}

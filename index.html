@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Sayed Munish Ahmad - Technology Lead specializing in React Native, .NET MAUI, Generative AI, Azure AI Foundry and Agentic AI.">
-    <title>Sayed Munish Ahmad | Technology Lead | Mobile & AI</title>
+    <meta name="description" content="">
+    <title></title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,30 +15,22 @@
 
     <nav class="navbar" id="navbar">
         <div class="container nav-container">
-            <a href="#" class="nav-logo">
-                <span class="logo-mark">M</span>
-                <span>Munish Ahmad</span>
+            <a href="#" class="nav-logo" id="navLogo">
+                <span class="logo-mark" id="logoMark"></span>
+                <span id="logoText"></span>
             </a>
             <div class="nav-right">
-                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
-                    <span class="theme-icon light">Light</span>
-                    <span class="theme-icon dark">Dark</span>
+                <button class="theme-toggle" id="themeToggle" aria-label="">
+                    <span class="theme-icon light" id="themeToggleLight"></span>
+                    <span class="theme-icon dark" id="themeToggleDark"></span>
                 </button>
-                <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <button class="nav-toggle" id="navToggle" aria-label="">
                     <span></span>
                     <span></span>
                     <span></span>
                 </button>
             </div>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="#cover-letter">Cover Letter</a></li>
-                <li><a href="#summary">Summary</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+            <ul class="nav-links" id="navLinks"></ul>
         </div>
     </nav>
 
@@ -46,27 +38,11 @@
         <div class="hero-bg"></div>
         <div class="container">
             <div class="hero-content">
-                <p class="hero-greeting">Hello, I'm</p>
-                <h1 class="name">Sayed Munish Ahmad</h1>
+                <p class="hero-greeting" id="heroGreeting"></p>
+                <h1 class="name" id="heroName"></h1>
                 <p class="title"><span id="typewriter"></span><span class="cursor">|</span></p>
-                <div class="contact-info">
-                    <a href="https://maps.google.com/?q=Bhubaneswar,India" target="_blank" rel="noopener">
-                        <span class="icon" aria-hidden="true">Loc</span> Bhubaneswar, India
-                    </a>
-                    <span class="separator">|</span>
-                    <a href="tel:+919777145839">
-                        <span class="icon" aria-hidden="true">Tel</span> +91 9777145839
-                    </a>
-                    <span class="separator">|</span>
-                    <a href="mailto:munishahmad@gmail.com">
-                        <span class="icon" aria-hidden="true">@</span> munishahmad@gmail.com
-                    </a>
-                </div>
-                <div class="hero-actions">
-                    <a href="https://linkedin.com/in/munish-ahmad-24377528" target="_blank" rel="noopener" class="btn-primary">View LinkedIn</a>
-                    <a href="#contact" class="btn-secondary">Get In Touch</a>
-                    <button class="btn-ghost" id="printResume">Print Resume</button>
-                </div>
+                <div class="contact-info" id="heroContact"></div>
+                <div class="hero-actions" id="heroActions"></div>
             </div>
         </div>
     </header>
@@ -74,373 +50,79 @@
     <main class="container">
         <section class="section cover-letter" id="cover-letter">
             <div class="section-header">
-                <span class="section-tag">Introduction</span>
-                <h2>Cover Letter</h2>
+                <span class="section-tag" id="coverLetterTag"></span>
+                <h2 id="coverLetterTitle"></h2>
             </div>
-            <div class="letter-body">
-                <p class="letter-intro">Dear Hiring Manager,</p>
-                <p>I am writing to express my interest in a <strong>Senior Application Developer, Technical Lead, or Mobile Application Developer</strong> position within your organization.</p>
-                <p>With over <strong>10 years of experience</strong> in designing and delivering scalable, high-performance mobile and cross-platform applications, I specialize in <strong>React Native, .NET MAUI, Xamarin, C#, Kotlin,</strong> and <strong>backend API development</strong>. I have successfully led enterprise application development from architecture and implementation to release management and production support while mentoring teams and driving engineering excellence.</p>
-                <p>Currently, I work as a <strong>Technology Lead at Infosys</strong>, where I lead end-to-end mobile application development, build enterprise-grade solutions, and develop AI-enabled proof-of-concepts to improve engineering productivity and business outcomes. My expertise includes <strong>application architecture, performance optimization, REST API integration, Microsoft Azure,</strong> and monitoring platforms such as <strong>AppDynamics, Sentry, and Grafana</strong>.</p>
-                <p>In addition to mobile and cloud technologies, I am experienced in <strong>Generative AI, Agentic AI, Azure AI Foundry, Prompt Engineering,</strong> and <strong>AI Agent development</strong>, with hands-on experience integrating enterprise AI solutions and applying Agile AI development practices using the <strong>BMAD Method</strong>. I am passionate about building intelligent, AI-powered applications that combine modern software engineering with practical AI capabilities.</p>
-                <p>I continuously invest in expanding my expertise through professional learning and certifications. My credentials include <strong>Claude 101, Claude Code 101, Microsoft Certified: GitHub Copilot,</strong> and <strong>Microsoft Certified: Agentic AI Business Solutions Architect (In Progress)</strong>.</p>
-                <p>I am confident that my combination of <strong>technical leadership, mobile application expertise, cloud technologies,</strong> and <strong>AI experience</strong> enables me to make an immediate contribution to your engineering team. I would welcome the opportunity to discuss how my background aligns with your organization's goals.</p>
-                <p>Thank you for your time and consideration. I look forward to hearing from you.</p>
-                <div class="letter-signoff">
-                    <p>Kind regards,</p>
-                    <p><strong>Sayed Munish Ahmad</strong><br>
-                    Technology Lead | React Native | .NET MAUI | Generative AI | Agentic AI | Azure AI Foundry<br>
-                    +91 9777145839 | munishahmad@gmail.com<br>
-                    <a href="https://linkedin.com/in/munish-ahmad-24377528" target="_blank" rel="noopener">linkedin.com/in/munish-ahmad-24377528</a></p>
-                </div>
-            </div>
+            <div class="letter-body" id="coverLetterBody"></div>
         </section>
 
         <section class="section summary" id="summary">
             <div class="section-header">
-                <span class="section-tag">At a Glance</span>
-                <h2>Professional Summary</h2>
+                <span class="section-tag" id="summaryTag"></span>
+                <h2 id="summaryTitle"></h2>
             </div>
-            <div class="summary-grid">
-                <div class="summary-card">
-                    <span class="summary-number">10+</span>
-                    <span class="summary-label">Years Experience</span>
-                </div>
-                <div class="summary-card">
-                    <span class="summary-number">4</span>
-                    <span class="summary-label">Organizations</span>
-                </div>
-                <div class="summary-card">
-                    <span class="summary-number">10+</span>
-                    <span class="summary-label">Enterprise Projects</span>
-                </div>
-                <div class="summary-card">
-                    <span class="summary-number">4+</span>
-                    <span class="summary-label">Certifications</span>
-                </div>
-            </div>
-            <div class="summary-text">
-                <p>Technology Lead over <strong>10 years of experience</strong> building scalable, high-performance mobile and cross-platform applications. Expertise in <strong>React Native, Expo, .NET MAUI, Xamarin, Kotlin, C#,</strong> and <strong>TypeScript</strong>, with a strong focus on architecture, performance, and technical leadership.</p>
-                <p>Experienced in <strong>Generative AI, Agentic AI, Azure AI Foundry, Prompt Engineering,</strong> and <strong>AI Agent development</strong>, with hands-on enterprise AI integration and Agile AI development (BMAD Method). Proven ability to lead end-to-end delivery, mentor engineering teams, optimize application performance, and integrate REST APIs, cloud services, and monitoring tools.</p>
-                <p>Passionate about building intelligent, AI-powered solutions through modern software engineering.</p>
-            </div>
+            <div class="summary-grid" id="summaryGrid"></div>
+            <div class="summary-text" id="summaryText"></div>
         </section>
 
         <section class="section skills" id="skills">
             <div class="section-header">
-                <span class="section-tag">Expertise</span>
-                <h2>Core Skills</h2>
+                <span class="section-tag" id="skillsTag"></span>
+                <h2 id="skillsTitle"></h2>
             </div>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <div class="skill-icon">Mobile</div>
-                    <h3>Mobile & Cross-Platform</h3>
-                    <div class="skill-tags">
-                        <span>React Native</span>
-                        <span>.NET MAUI</span>
-                        <span>Xamarin</span>
-                        <span>Expo</span>
-                        <span>Cross-platform Development</span>
-                    </div>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">Native</div>
-                    <h3>Native Mobile</h3>
-                    <div class="skill-tags">
-                        <span>Android</span>
-                        <span>Android SDK</span>
-                        <span>Android Studio</span>
-                        <span>iOS</span>
-                        <span>iOS Development</span>
-                        <span>Xcode</span>
-                    </div>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">Code</div>
-                    <h3>Languages</h3>
-                    <div class="skill-tags">
-                        <span>C#</span>
-                        <span>Kotlin</span>
-                        <span>JavaScript</span>
-                        <span>TypeScript</span>
-                        <span>Java</span>
-                        <span>C</span>
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>XAML</span>
-                        <span>JSON</span>
-                    </div>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">Stack</div>
-                    <h3>Frameworks, Tools & IDEs</h3>
-                    <div class="skill-tags">
-                        <span>React.js</span>
-                        <span>MVVM</span>
-                        <span>Visual Studio</span>
-                        <span>VS Code</span>
-                        <span>Android Studio</span>
-                        <span>Xcode</span>
-                        <span>GitHub</span>
-                        <span>GitHub Copilot</span>
-                    </div>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">Cloud</div>
-                    <h3>Cloud & AI</h3>
-                    <div class="skill-tags">
-                        <span>Microsoft Azure</span>
-                        <span>Cloud Foundry</span>
-                        <span>Generative AI</span>
-                        <span>Agentic AI</span>
-                        <span>Azure AI Foundry</span>
-                        <span>Prompt Engineering</span>
-                        <span>AI Agent Development</span>
-                    </div>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">Web</div>
-                    <h3>Web & CMS</h3>
-                    <div class="skill-tags">
-                        <span>Web Development</span>
-                        <span>Responsive Web Design</span>
-                        <span>CMS</span>
-                        <span>WordPress</span>
-                    </div>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">Monitor</div>
-                    <h3>Monitoring & Performance</h3>
-                    <div class="skill-tags">
-                        <span>AppDynamics</span>
-                        <span>Sentry</span>
-                        <span>Grafana</span>
-                        <span>Application Monitoring</span>
-                        <span>Performance Optimization</span>
-                    </div>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">Process</div>
-                    <h3>Processes & Architecture</h3>
-                    <div class="skill-tags">
-                        <span>System Architecture</span>
-                        <span>Mobile UX</span>
-                        <span>REST API Integration</span>
-                        <span>Quality Processes</span>
-                        <span>QA Automation</span>                        
-                        <span>Product Development</span>
-                        <span>Operational Efficiency</span>
-                    </div>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">Lead</div>
-                    <h3>Leadership</h3>
-                    <div class="skill-tags">
-                        <span>Team Management</span>
-                        <span>Technical Leadership</span>
-                        <span>Release Management</span>
-                        <span>Production Support</span>
-                        <span>Agile Delivery</span>
-                    </div>
-                </div>
-            </div>
+            <div class="skills-grid" id="skillsGrid"></div>
         </section>
 
         <section class="section experience" id="experience">
             <div class="section-header">
-                <span class="section-tag">Career</span>
-                <h2>Professional Experience</h2>
+                <span class="section-tag" id="experienceTag"></span>
+                <h2 id="experienceTitle"></h2>
             </div>
-            <div class="timeline">
-                <div class="job">
-                    <div class="job-header">
-                        <h3>Technology Lead</h3>
-                        <span class="company">Infosys</span>
-                        <span class="duration">Aug 2022 – Present</span>
-                    </div>
-                    <ul>
-                        <li>Lead end-to-end mobile application development, including coding, maintenance, release support, and defect management.</li>
-                        <li>Build enterprise-grade solutions and develop AI-enabled proof-of-concepts to improve engineering productivity and business outcomes.</li>
-                        <li>Collaborate with QA teams to ensure quality, streamline processes, and drive engineering excellence.</li>
-                        <li>Utilize GitHub Copilot effectively to enhance productivity and efficiency.</li>
-                        <li>Own application architecture, performance optimization, REST API integration, and production monitoring.</li>
-                    </ul>
-                    <p class="projects"><strong>Key Projects:</strong> PepsiCo SH+ App, TSC TMA</p>
-                </div>
-
-                <div class="job">
-                    <div class="job-header">
-                        <h3>Lead Developer / Senior Developer</h3>
-                        <span class="company">LocalWire</span>
-                        <span class="duration">2019 – 2022</span>
-                    </div>
-                    <ul>
-                        <li>Led development of scalable mobile apps improving user experience.</li>
-                        <li>Managed team delivery ensuring timely releases.</li>
-                    </ul>
-                    <p class="projects"><strong>Key Project:</strong> Odisha Local Hyperlocal News App</p>
-                </div>
-
-                <div class="job">
-                    <div class="job-header">
-                        <h3>Xamarin Developer</h3>
-                        <span class="company">Ellmech IT</span>
-                        <span class="duration">2017 – 2019</span>
-                    </div>
-                    <ul>
-                        <li>Delivered enterprise mobility solutions.</li>
-                        <li>Improved application stability and performance.</li>
-                    </ul>
-                    <p class="projects"><strong>Key Projects:</strong> VLMS Logistics (Vedanta), LimsCoal, Meal Booking App</p>
-                </div>
-
-                <div class="job">
-                    <div class="job-header">
-                        <h3>Web Developer</h3>
-                        <span class="company">HyperSolution</span>
-                        <span class="duration">2014 – 2015</span>
-                    </div>
-                    <ul>
-                        <li>Developed responsive websites.</li>
-                    </ul>
-                </div>
-            </div>
+            <div class="timeline" id="experienceTimeline"></div>
         </section>
 
         <section class="section projects" id="projects">
             <div class="section-header">
-                <span class="section-tag">Portfolio</span>
-                <h2>Key Projects</h2>
+                <span class="section-tag" id="projectsTag"></span>
+                <h2 id="projectsTitle"></h2>
             </div>
-            <div class="projects-grid">
-                <article class="project-card">
-                    <div class="project-meta">Infosys</div>
-                    <h3>PepsiCo SH+ App</h3>
-                    <p>Enterprise mobile application for PepsiCo, enabling sales and distribution workflows with performance monitoring and scalable architecture.</p>
-                    <div class="project-tags">
-                        <span>React Native</span>
-                        <span>Enterprise</span>
-                        <span>Mobile</span>
-                    </div>
-                </article>
-                <article class="project-card">
-                    <div class="project-meta">Infosys</div>
-                    <h3>TSC TMA</h3>
-                    <p>Technical mobility application focused on enterprise operations, release management, and production support.</p>
-                    <div class="project-tags">
-                        <span>Cross-Platform</span>
-                        <span>Release Mgmt</span>
-                    </div>
-                </article>
-                <article class="project-card">
-                    <div class="project-meta">LocalWire</div>
-                    <h3>Odisha Local Hyperlocal News App</h3>
-                    <p>Scalable hyperlocal news platform delivering regional content and improving user engagement across mobile devices.</p>
-                    <div class="project-tags">
-                        <span>News Platform</span>
-                        <span>Android</span>
-                        <span>iOS</span>
-                    </div>
-                </article>
-                <article class="project-card">
-                    <div class="project-meta">Ellmech IT</div>
-                    <h3>VLMS Logistics (Vedanta)</h3>
-                    <p>Vehicle and logistics management solution for Vedanta, streamlining enterprise mobility and field operations.</p>
-                    <div class="project-tags">
-                        <span>Xamarin</span>
-                        <span>Logistics</span>
-                        <span>Enterprise</span>
-                    </div>
-                </article>
-                <article class="project-card">
-                    <div class="project-meta">Ellmech IT</div>
-                    <h3>LimsCoal</h3>
-                    <p>Laboratory information management system for coal quality tracking and reporting in industrial environments.</p>
-                    <div class="project-tags">
-                        <span>LIMS</span>
-                        <span>Industrial</span>
-                    </div>
-                </article>
-                <article class="project-card">
-                    <div class="project-meta">Ellmech IT</div>
-                    <h3>Meal Booking App</h3>
-                    <p>Enterprise meal booking and cafeteria management application improving daily operations for large workforces.</p>
-                    <div class="project-tags">
-                        <span>Enterprise</span>
-                        <span>Booking</span>
-                    </div>
-                </article>
-            </div>
+            <div class="projects-grid" id="projectsGrid"></div>
         </section>
 
         <section class="section education" id="education">
             <div class="section-header">
-                <span class="section-tag">Background</span>
-                <h2>Education & Certifications</h2>
+                <span class="section-tag" id="educationTag"></span>
+                <h2 id="educationTitle"></h2>
             </div>
-            <div class="edu-grid">
-                <div class="edu-card">
-                    <h3>Master in Computer Application</h3>
-                    <p>Regional College, BPUT</p>
-                </div>
-                <div class="edu-card">
-                    <h3>B.Sc</h3>
-                    <p>Utkal University</p>
-                </div>
-            </div>
-            <div class="certifications">
-                <h3>Certifications</h3>
-                <ul>
-                    <li>Claude 101</li>
-                    <li>Claude Code 101</li>
-                    <li>Microsoft Certified: GitHub Copilot</li>
-                    <li>Microsoft Certified: Agentic AI Business Solutions Architect</li>
-                </ul>
-            </div>
+            <div class="edu-grid" id="educationGrid"></div>
+            <div class="certifications" id="certifications"></div>
         </section>
 
         <section class="section contact" id="contact">
             <div class="section-header">
-                <span class="section-tag">Reach Out</span>
-                <h2>Let's Connect</h2>
+                <span class="section-tag" id="contactTag"></span>
+                <h2 id="contactTitle"></h2>
             </div>
             <div class="contact-grid">
                 <div class="contact-info-card">
-                    <p>I am open to Senior Application Developer, Technical Lead, and Mobile Application Developer opportunities. Let's discuss how my experience can contribute to your team.</p>
-                    <div class="contact-methods">
-                        <a href="mailto:munishahmad@gmail.com" class="contact-method">
-                            <span class="method-label">Email</span>
-                            <span class="method-value">munishahmad@gmail.com</span>
-                        </a>
-                        <a href="tel:+919777145839" class="contact-method">
-                            <span class="method-label">Phone</span>
-                            <span class="method-value">+91 9777145839</span>
-                        </a>
-                        <a href="https://linkedin.com/in/munish-ahmad-24377528" target="_blank" rel="noopener" class="contact-method">
-                            <span class="method-label">LinkedIn</span>
-                            <span class="method-value">linkedin.com/in/munish-ahmad-24377528</span>
-                        </a>
-                        <div class="contact-method">
-                            <span class="method-label">Location</span>
-                            <span class="method-value">Bhubaneswar, India</span>
-                        </div>
-                    </div>
+                    <p id="contactIntro"></p>
+                    <div class="contact-methods" id="contactMethods"></div>
                 </div>
                 <form class="contact-form" id="contactForm">
                     <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" placeholder="Your name" required>
+                        <label for="name" id="formNameLabel"></label>
+                        <input type="text" id="name" name="name" placeholder="" required>
                     </div>
                     <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                        <label for="email" id="formEmailLabel"></label>
+                        <input type="email" id="email" name="email" placeholder="" required>
                     </div>
                     <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="4" placeholder="Tell me about the opportunity..." required></textarea>
+                        <label for="message" id="formMessageLabel"></label>
+                        <textarea id="message" name="message" rows="4" placeholder="" required></textarea>
                     </div>
-                    <button type="submit" class="btn-primary full">Send Message</button>
-                    <p class="form-note" id="formNote">This form is for demonstration. It will open your email client.</p>
+                    <button type="submit" class="btn-primary full" id="formSubmit"></button>
+                    <p class="form-note" id="formNote"></p>
                 </form>
             </div>
         </section>
@@ -449,18 +131,18 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <p>&copy; <span id="year"></span> Sayed Munish Ahmad. All rights reserved.</p>
-                <div class="footer-links">
-                    <a href="https://linkedin.com/in/munish-ahmad-24377528" target="_blank" rel="noopener">LinkedIn</a>
-                    <a href="mailto:munishahmad@gmail.com">Email</a>
-                    <a href="tel:+919777145839">Phone</a>
+                <p>&copy; <span id="year"></span> <span id="footerCopyright"></span></p>
+                <div class="footer-links" id="footerLinks"></div>
+                <div class="analytics-badge" id="analyticsBadge" title="">
+                    <span id="analyticsLabel"></span>
+                    <span id="pageViewCount">--</span>
                 </div>
             </div>
         </div>
     </footer>
 
-    <button class="back-to-top" id="backToTop" aria-label="Back to top">
-        <span>Top</span>
+    <button class="back-to-top" id="backToTop" aria-label="">
+        <span id="backToTopText"></span>
     </button>
 
     <script src="script.js"></script>
